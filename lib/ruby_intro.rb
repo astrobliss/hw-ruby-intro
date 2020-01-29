@@ -85,7 +85,7 @@ class BookInStock
   end
   
   def price=(price)
-    if not price.instance_of?(Float) or price<=0
+    if price<=0
       raise ArgumentError
     end
     @price = price
